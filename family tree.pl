@@ -28,7 +28,7 @@ grandmother(G, C) :-
     female(G), parent(G, X), parent(X, C).
 
 sister(S, P) :-
-    female(S), parent(X, S), parent(X, P).
+    female(S), parent(X, S), parent(X, P),S\=P.
 
 brother(B, P) :-
-    male(B), parent(X, B), parent(X, P).
+    male(B), parent(X, B), parent(X, P),B\=P.
